@@ -33,6 +33,6 @@ Instructions suivies par la tâche planifiée, chaque matin :
 2. Comparer à la veille et à 7 jours ; mettre à jour le frontmatter de la fiche (cours, biais, derniere_maj, echantillon_faible) et sa section « Dernier relevé ».
 3. Ajouter une ligne en haut de « Signaux datés » seulement en cas de bascule, de mouvement net, ou de variation de l'open interest d'au moins 20 % sur 7 jours. Chaque ligne cite ses chiffres et renvoie au relevé du jour.
 4. Écrire `Journal/AAAA-MM-JJ.md` : synthèse de 3 à 5 phrases, changements notables avec liens vers les fiches, tableau complet, champ `precedent` pointant vers le relevé de la veille.
-5. Le dimanche : régénérer un graphique par contrat dans `Graphiques/` à partir des CSV, et la vue d'ensemble du positionnement Apex dans `Graphiques/Journal/`.
+5. Le dimanche : lancer `python3 .outils/regenerer.py` depuis la racine du vault. Il redessine un graphique par contrat dans `Graphiques/` à partir des CSV, et la vue d'ensemble du positionnement Apex dans `Graphiques/Journal/`, avec le même style.
 6. Ne jamais modifier la section « Notes » d'une fiche, ni une note créée par Erwan.
 7. Valider avec le message « Relevé AAAA-MM-JJ » et pousser sur GitHub.
