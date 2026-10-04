@@ -2,6 +2,13 @@
  "note": "Identifiants Notion de l'espace Marchés, utilisés par la tâche quotidienne pour écrire sans recherche.",
  "page_marches": "3efac547-ceb8-80b2-b412-de507076cb8d",
  "page_methode": "3efac547-ceb8-81cf-976f-fc05c0706854",
+ "page_conseil": "3efac547-ceb8-8127-89f0-e96f8e789583",
+ "lectures": {
+  "database": "c9c8942534c74b3d957920897fd8757d",
+  "data_source": "b8714ec8-5bea-4039-9767-f520132c92aa",
+  "vue_toutes": "view://8a8eedb0-daf7-4407-b699-876a356a75b8",
+  "vue_bilan": "view://3efac547-ceb8-8118-9f77-000c952d99db"
+ },
  "valeurs": {
   "database": "490584edbd184d9d94c41c1df3c6ea4a",
   "data_source": "167e3931-5554-4690-bc9b-0d3232e310f9"

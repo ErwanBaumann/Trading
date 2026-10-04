@@ -49,3 +49,4 @@ Instructions suivies par la tâche planifiée :
 3. Le dimanche : `python3 .outils/regenerer.py` depuis la racine du dépôt.
 4. Valider avec le message « Relevé AAAA-MM-JJ » et pousser.
 5. Mettre ensuite à jour l'espace Notion avec les mêmes chiffres et, le dimanche, les nouveaux liens d'images. Les identifiants des pages et des bases sont dans `notion.json` : s'en servir plutôt que de rechercher, et y remplacer `dernier_journal` après chaque nouveau relevé.
+6. Réécrire l'analyse de la page Conseil, l'archiver dans la page du Journal, et tenir à jour la base Lectures (ouverture, variation à 7 et 30 jours, statut) selon les règles de la page Méthode de Notion.
