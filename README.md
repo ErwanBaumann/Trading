@@ -7,6 +7,7 @@ Ce dépôt est la couche de données d'une veille de marché : un CSV quotidien 
 | Chemin | Contenu |
 | --- | --- |
 | `actifs.json` | valeurs suivies, thème, contrat Hyperliquid ; valeurs sans contrat à part |
+| `notion.json` | identifiants de l'espace Notion (bases, fiches, dernier journal) |
 | `Données/<TICKER>.csv` | une ligne par jour et par contrat |
 | `Graphiques/<AAAA-MM-JJ>/` | un graphique par contrat et `positionnement.png` (vue d'ensemble), générés le dimanche |
 | `.outils/graphiques.py` | style des graphiques |
@@ -47,4 +48,4 @@ Instructions suivies par la tâche planifiée :
 2. Ajouter une ligne datée à chaque `Données/<TICKER>.csv` : une seule ligne par date, sans jamais réécrire les lignes passées.
 3. Le dimanche : `python3 .outils/regenerer.py` depuis la racine du dépôt.
 4. Valider avec le message « Relevé AAAA-MM-JJ » et pousser.
-5. Mettre ensuite à jour l'espace Notion avec les mêmes chiffres et, le dimanche, les nouveaux liens d'images.
+5. Mettre ensuite à jour l'espace Notion avec les mêmes chiffres et, le dimanche, les nouveaux liens d'images. Les identifiants des pages et des bases sont dans `notion.json` : s'en servir plutôt que de rechercher, et y remplacer `dernier_journal` après chaque nouveau relevé.

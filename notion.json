@@ -1,0 +1,55 @@
+{
+ "note": "Identifiants Notion de l'espace Marchés, utilisés par la tâche quotidienne pour écrire sans recherche.",
+ "page_marches": "3efac547-ceb8-80b2-b412-de507076cb8d",
+ "page_methode": "3efac547-ceb8-81cf-976f-fc05c0706854",
+ "valeurs": {
+  "database": "490584edbd184d9d94c41c1df3c6ea4a",
+  "data_source": "167e3931-5554-4690-bc9b-0d3232e310f9"
+ },
+ "releves": {
+  "database": "9b61ed10a1ff4d699ee5c6b9db147b0c",
+  "data_source": "d3a96fd3-0785-4c11-afe0-747dc992527b"
+ },
+ "journal": {
+  "database": "ee8be2eb81d044d29695f2130649dc1c",
+  "data_source": "25f47df9-e1bf-49a3-aaf7-433f375dc9ed"
+ },
+ "fiches": {
+  "NVDA": "3efac547-ceb8-81a6-b8c7-eb9b4fd82ce7",
+  "AMD": "3efac547-ceb8-81a0-80c2-f41a05c42ff4",
+  "SNDK": "3efac547-ceb8-8181-a010-f1fb84f78248",
+  "MU": "3efac547-ceb8-81a1-88f9-f2eba7b1695e",
+  "SMSN": "3efac547-ceb8-81fb-8b9c-d0ff2275665a",
+  "TSM": "3efac547-ceb8-8105-a2fe-f988b54ab639",
+  "ASML": "3efac547-ceb8-8140-af4e-f18aa4fa68ef",
+  "AVGO": "3efac547-ceb8-8152-bc14-d8f8b1bafe93",
+  "MSFT": "3efac547-ceb8-8145-8ca9-f15caf686432",
+  "GOOGL": "3efac547-ceb8-81a8-9900-dd39aa71a774",
+  "META": "3efac547-ceb8-8142-90f5-ea511400b983",
+  "PLTR": "3efac547-ceb8-815d-aeb0-d559ea504a1e",
+  "CRWV": "3efac547-ceb8-815b-a237-d96db45c0b6d",
+  "NBIS": "3efac547-ceb8-818f-ba15-ee47dfecd51e",
+  "TSLA": "3efac547-ceb8-812c-8414-d8a8447ee5e8",
+  "UNITREE": "3efac547-ceb8-8127-86f2-f5f22ef867d6",
+  "HYUNDAI": "3efac547-ceb8-8131-b8f8-fe5e65b67774",
+  "SK Hynix": "3efac547-ceb8-8166-96d4-cfa369429172",
+  "Harmonic Drive Systems": "3efac547-ceb8-813d-b04f-ffd7bdfba0bb",
+  "Nabtesco": "3efac547-ceb8-8159-880f-d4c2fee6ebe3",
+  "THK": "3efac547-ceb8-81f2-a68a-c987430eba93",
+  "Schaeffler": "3efac547-ceb8-8112-802e-ccad673b8d48",
+  "Rheinmetall": "3efac547-ceb8-81da-9cba-c86760167150",
+  "Hensoldt": "3efac547-ceb8-8185-9f79-f8be4a7807d8",
+  "Renk": "3efac547-ceb8-8174-b92d-c67d188f4040",
+  "Thales": "3efac547-ceb8-8187-a751-ea0c7b01e2f0",
+  "Safran": "3efac547-ceb8-81d0-926f-c46336482a38",
+  "BAE Systems": "3efac547-ceb8-814e-a66c-de78c45149d4",
+  "Leonardo": "3efac547-ceb8-817a-8f85-de9933b29c66",
+  "Saab": "3efac547-ceb8-81b1-b06d-daf27c949097",
+  "Lockheed Martin": "3efac547-ceb8-81b8-bb06-cb90692fe832",
+  "RTX": "3efac547-ceb8-815c-a7b0-ff9c20b5a75e"
+ },
+ "dernier_journal": {
+  "date": "2026-10-04",
+  "page": "3efac547-ceb8-81c6-b40f-c385d06bba72"
+ }
+}
