@@ -9,6 +9,14 @@
   "vue_toutes": "view://8a8eedb0-daf7-4407-b699-876a356a75b8",
   "vue_bilan": "view://3efac547-ceb8-8118-9f77-000c952d99db"
  },
+ "radar": {
+  "database": "f11afe9cf7a443c6b8776ebdb81c1974",
+  "data_source": "0240f264-c6cb-40c5-b1a6-a94aba797c23"
+ },
+ "acteurs_suivis": {
+  "database": "bae0bc0856c3418cb5497829f47ad000",
+  "data_source": "0acfe9c2-8470-412f-a36c-152c8202586d"
+ },
  "valeurs": {
   "database": "490584edbd184d9d94c41c1df3c6ea4a",
   "data_source": "167e3931-5554-4690-bc9b-0d3232e310f9"
