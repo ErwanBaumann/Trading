@@ -48,6 +48,7 @@ SUIVEUR = 2.0               # écart au plus haut, en semaines types (au moins l
 SERIE = (4, {"action": 5.0, "etf": 3.0})       # 4 séances de baisse et au moins 1 semaine type
 PLAFOND_LIGNE = 25.0        # % de l'enveloppe
 LECTURE_SEUIL = 0.5         # écart à la référence, en semaines types, pour classer une lecture
+RELEVES_DU_MATIN = dt.date(2026, 10, 4)   # première ligne des CSV issue d'un relevé du matin
 
 
 def r(x, n=2):
@@ -244,7 +245,12 @@ def cmd_contrat(a):
     with open(chemin, encoding="utf-8") as f:
         lignes = [l for l in csv.DictReader(f) if l.get("cours")]
     jours = [(dt.date.fromisoformat(l["date"]), float(l["cours"])) for l in lignes]
-    ouvres = [(d, c) for d, c in jours if d.weekday() < 5]
+    # Les lignes reconstituées (avant le 4 octobre 2026) sont prises à 23 h UTC : elles reflètent
+    # la séance du jour même. Les relevés du matin (à partir du 4 octobre 2026) reflètent la
+    # séance de la veille. On ne garde que les lignes dont la séance tombe du lundi au vendredi.
+    def seance(d):
+        return d if d < RELEVES_DU_MATIN else d - dt.timedelta(days=1)
+    ouvres = [(d, c) for d, c in jours if seance(d).weekday() < 5]
     cl = [c for _, c in ouvres][-(SEANCES_SIGMA + 1):]
     if len(cl) < 16:
         print(json.dumps({"ticker": a.ticker, "semaine_type_pct": None,
