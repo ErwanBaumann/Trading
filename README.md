@@ -12,6 +12,9 @@ Ce dépôt est la couche de données d'une veille de marché : un CSV quotidien 
 | `Graphiques/<AAAA-MM-JJ>/` | un graphique par contrat et `positionnement.png` (vue d'ensemble), générés le dimanche |
 | `.outils/graphiques.py` | style des graphiques |
 | `.outils/regenerer.py` | régénère les graphiques de la semaine à partir des CSV |
+| `.outils/indicateurs.py` | calcule de façon déterministe semaine type, MM50, force relative, séries de baisse, seuils, taille selon la règle, écart des lectures à leur référence, indice et portefeuille fantôme (`python3 .outils/indicateurs.py -h`) |
+
+`indicateurs.py` ne contient que des règles de calcul. Les fichiers de cours ou de portefeuille qu'on lui passe restent dans un dossier temporaire hors du dépôt et ne sont jamais validés.
 
 Lien public d'une image, à utiliser dans Notion :
 `https://raw.githubusercontent.com/ErwanBaumann/Trading/main/Graphiques/<AAAA-MM-JJ>/<TICKER>.png`
@@ -44,9 +47,11 @@ Limites : historique reconstitué le 4 octobre 2026 (cours et open interest depu
 
 Instructions suivies par la tâche planifiée :
 
-1. Pour chaque contrat de `actifs.json`, relever avec Coinversa Pulse le cours et l'open interest (`market_historical_oi` sur l'heure pleine la plus récente), le positionnement par catégorie (`live_cohort_bias` : Apex, Sharps, Foule, nombre de portefeuilles et montant engagés des Apex) et le taux de financement (`list_markets`).
+1. Pour chaque contrat de `actifs.json`, relever avec Coinversa Pulse le cours et l'open interest (`market_historical_oi` sur l'heure pleine la plus récente), le positionnement par catégorie (`live_cohort_bias` : Apex, Sharps, Foule, nombre de portefeuilles et montant engagés des Apex) et le taux de financement (`list_markets`). Relever aussi le cours et l'open interest des contrats de référence (`references.contrats` : `xyz:SMH`, `xyz:XYZ100`), sans positionnement, dans `Données/SMH.csv` et `Données/XYZ100.csv`.
 2. Ajouter une ligne datée à chaque `Données/<TICKER>.csv` : une seule ligne par date, sans jamais réécrire les lignes passées.
 3. Le dimanche : `python3 .outils/regenerer.py` depuis la racine du dépôt.
 4. Valider avec le message « Relevé AAAA-MM-JJ » et pousser.
 5. Mettre ensuite à jour l'espace Notion avec les mêmes chiffres et, le dimanche, les nouveaux liens d'images. Les identifiants des pages et des bases sont dans `notion.json` : s'en servir plutôt que de rechercher, et y remplacer `dernier_journal` après chaque nouveau relevé.
-6. Réécrire l'analyse de la page Conseil, l'archiver dans la page du Journal, et tenir à jour la base Lectures (ouverture, variation à 7 et 30 jours, statut) selon les règles de la page Méthode de Notion.
+6. Réécrire l'analyse de la page Conseil, l'archiver dans la page du Journal, et tenir à jour la base Lectures (ouverture, variation à 7 et 30 jours, statut) selon les règles de la page Méthode de Notion. L'écart d'une lecture à sa référence et son statut se calculent avec `python3 .outils/indicateurs.py lecture`, la semaine type du contrat avec `python3 .outils/indicateurs.py contrat <TICKER>`. Aucune lecture ne s'ouvre et aucun signal daté ne s'inscrit le dimanche ni le lundi matin : ces relevés reflètent des contrats qui cotent alors que les bourses sont fermées.
+
+Paramètres gelés jusqu'au 4 janvier 2027 (seuils de camp, 30 points, 5 M\$, 20 % d'open interest, demi-semaine type pour classer une lecture, constantes de `indicateurs.py`) : on ne les retouche qu'au bilan trimestriel, pour ne pas ajuster le système au hasard.

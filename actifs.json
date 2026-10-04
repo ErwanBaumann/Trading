@@ -164,5 +164,26 @@
    "nom": "RTX",
    "theme": "Défense"
   }
- ]
+ ],
+ "references": {
+  "note": "Références de comparaison. 'contrats' : contrats Hyperliquid relevés chaque matin dans Données/<TICKER>.csv (cours seulement), pour évaluer les lectures. 'etf' : ETF dont la tâche du soir prend les clôtures (stockanalysis.com) pour la force relative d'un titre. 'portefeuille' : ETF du portefeuille fantôme.",
+  "contrats": {
+   "Puces et mémoire": "xyz:SMH",
+   "IA": "xyz:XYZ100",
+   "Robotique et actionneurs": "xyz:XYZ100"
+  },
+  "etf": {
+   "Puces et mémoire": "SMH",
+   "IA": "QQQ",
+   "Robotique et actionneurs": "BOTZ",
+   "Défense (États-Unis)": "ITA",
+   "Défense (Europe)": "EUAD",
+   "Autre": "URTH"
+  },
+  "portefeuille": {
+   "nom": "iShares Nasdaq 100 UCITS ETF (Acc)",
+   "isin": "IE00B53SZB19",
+   "cours": "https://www.ls-tc.de/de/etf/IE00B53SZB19"
+  }
+ }
 }
