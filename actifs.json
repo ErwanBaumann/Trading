@@ -1,0 +1,168 @@
+{
+ "contrats": [
+  {
+   "ticker": "NVDA",
+   "nom": "Nvidia",
+   "theme": "Puces et mémoire",
+   "hyperliquid": "xyz:NVDA"
+  },
+  {
+   "ticker": "AMD",
+   "nom": "AMD",
+   "theme": "Puces et mémoire",
+   "hyperliquid": "xyz:AMD"
+  },
+  {
+   "ticker": "SNDK",
+   "nom": "SanDisk",
+   "theme": "Puces et mémoire",
+   "hyperliquid": "xyz:SNDK"
+  },
+  {
+   "ticker": "MU",
+   "nom": "Micron",
+   "theme": "Puces et mémoire",
+   "hyperliquid": "xyz:MU"
+  },
+  {
+   "ticker": "SMSN",
+   "nom": "Samsung Electronics",
+   "theme": "Puces et mémoire",
+   "hyperliquid": "xyz:SMSN"
+  },
+  {
+   "ticker": "TSM",
+   "nom": "TSMC",
+   "theme": "Puces et mémoire",
+   "hyperliquid": "xyz:TSM"
+  },
+  {
+   "ticker": "ASML",
+   "nom": "ASML",
+   "theme": "Puces et mémoire",
+   "hyperliquid": "xyz:ASML"
+  },
+  {
+   "ticker": "AVGO",
+   "nom": "Broadcom",
+   "theme": "Puces et mémoire",
+   "hyperliquid": "xyz:AVGO"
+  },
+  {
+   "ticker": "MSFT",
+   "nom": "Microsoft",
+   "theme": "IA",
+   "hyperliquid": "xyz:MSFT"
+  },
+  {
+   "ticker": "GOOGL",
+   "nom": "Alphabet",
+   "theme": "IA",
+   "hyperliquid": "xyz:GOOGL"
+  },
+  {
+   "ticker": "META",
+   "nom": "Meta",
+   "theme": "IA",
+   "hyperliquid": "xyz:META"
+  },
+  {
+   "ticker": "PLTR",
+   "nom": "Palantir",
+   "theme": "IA",
+   "hyperliquid": "xyz:PLTR"
+  },
+  {
+   "ticker": "CRWV",
+   "nom": "CoreWeave",
+   "theme": "IA",
+   "hyperliquid": "xyz:CRWV"
+  },
+  {
+   "ticker": "NBIS",
+   "nom": "Nebius",
+   "theme": "IA",
+   "hyperliquid": "xyz:NBIS"
+  },
+  {
+   "ticker": "TSLA",
+   "nom": "Tesla",
+   "theme": "Robotique et actionneurs",
+   "hyperliquid": "xyz:TSLA"
+  },
+  {
+   "ticker": "UNITREE",
+   "nom": "Unitree",
+   "theme": "Robotique et actionneurs",
+   "hyperliquid": "xyz:UNITREE"
+  },
+  {
+   "ticker": "HYUNDAI",
+   "nom": "Hyundai Motor",
+   "theme": "Robotique et actionneurs",
+   "hyperliquid": "xyz:HYUNDAI"
+  }
+ ],
+ "sans_contrat": [
+  {
+   "nom": "SK Hynix",
+   "theme": "Puces et mémoire"
+  },
+  {
+   "nom": "Harmonic Drive Systems",
+   "theme": "Robotique et actionneurs"
+  },
+  {
+   "nom": "Nabtesco",
+   "theme": "Robotique et actionneurs"
+  },
+  {
+   "nom": "THK",
+   "theme": "Robotique et actionneurs"
+  },
+  {
+   "nom": "Schaeffler",
+   "theme": "Robotique et actionneurs"
+  },
+  {
+   "nom": "Rheinmetall",
+   "theme": "Défense"
+  },
+  {
+   "nom": "Hensoldt",
+   "theme": "Défense"
+  },
+  {
+   "nom": "Renk",
+   "theme": "Défense"
+  },
+  {
+   "nom": "Thales",
+   "theme": "Défense"
+  },
+  {
+   "nom": "Safran",
+   "theme": "Défense"
+  },
+  {
+   "nom": "BAE Systems",
+   "theme": "Défense"
+  },
+  {
+   "nom": "Leonardo",
+   "theme": "Défense"
+  },
+  {
+   "nom": "Saab",
+   "theme": "Défense"
+  },
+  {
+   "nom": "Lockheed Martin",
+   "theme": "Défense"
+  },
+  {
+   "nom": "RTX",
+   "theme": "Défense"
+  }
+ ]
+}
